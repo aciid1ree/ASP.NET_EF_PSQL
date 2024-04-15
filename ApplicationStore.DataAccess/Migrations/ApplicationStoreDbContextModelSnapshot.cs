@@ -24,35 +24,35 @@ namespace ApplicationStore.DataAccess.Migrations
 
             modelBuilder.Entity("ApplicationStore.DataAccess.Entities.ApplicationEntity", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<Guid>("id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<string>("Activity")
+                    b.Property<string>("activity")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<Guid>("Author")
+                    b.Property<Guid>("author")
                         .HasColumnType("uuid");
 
-                    b.Property<string>("Description")
+                    b.Property<string>("description")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("name")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("Outline")
+                    b.Property<string>("outline")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<DateTime>("Submitted")
+                    b.Property<DateTime>("submitted")
                         .HasColumnType("timestamp with time zone");
 
-                    b.HasKey("Id");
+                    b.HasKey("id");
 
-                    b.ToTable("Applications3");
+                    b.ToTable("Applications4");
                 });
 #pragma warning restore 612, 618
         }

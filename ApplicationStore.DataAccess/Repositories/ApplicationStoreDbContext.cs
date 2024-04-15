@@ -1,16 +1,14 @@
-﻿using ApplicationStore.DataAccess.Entities;
+﻿namespace ApplicationStore.DataAccess.Repositories;
+using ApplicationStore.DataAccess.Entities;
 using Microsoft.EntityFrameworkCore;
 
-
-namespace ApplicationStore.DataAccess.Repositories
+public class ApplicationStoreDbContext : DbContext
 {
-    public class ApplicationStoreDbContext : DbContext
+    public ApplicationStoreDbContext(DbContextOptions<ApplicationStoreDbContext> options)
+        : base(options)
     {
-        public ApplicationStoreDbContext(DbContextOptions<ApplicationStoreDbContext> options)
-            : base(options)
-        {
 
-        }
-        public DbSet<ApplicationEntity> Applications3 { get; set; }
     }
+    public DbSet<ApplicationEntity> Applications4 { get; set; }
 }
+

@@ -1,20 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ApplicationStore.DataAccess.Entities
+﻿namespace ApplicationStore.DataAccess.Entities;
+public class ApplicationEntity
 {
-    public class ApplicationEntity
-    {
-        public Guid Id { get; set; }
-        public Guid Author { get; set; }
-        public string Activity { get; set; } = string.Empty;
-        public string Name { get; set; } = string.Empty;
-        public string Description { get; set; } = string.Empty;
-        public string Outline { get; set; } = string.Empty;
-        public DateTime Submitted { get; set; } = DateTime.MinValue;
-
-    }
+    public Guid id { get; set; }
+    public Guid author { get; set; }
+    public string activity { get; set; } = string.Empty;
+    public string name { get; set; } = string.Empty;
+    public string description { get; set; } = string.Empty;
+    public string outline { get; set; } = string.Empty;
+    public DateTime submitted { get; set; } = DateTime.MinValue;
 }
